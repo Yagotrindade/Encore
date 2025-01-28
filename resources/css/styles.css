@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    font-family: roboto, "work sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: #ffffab4f;
+    font-size: 12px;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    width: 95%;
+    right: 2.5%;
+    left: 2.5%;
+    top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #B3FF00;
+    border-radius: 50px;
+    box-shadow: -1px 2px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.logo-container img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    list-style-type: none;
+
+}
+
+#nav-bar ul li a:hover {
+    position: relative;
+    bottom: 2px;
+    box-shadow: -1.5px 3px rgba(0, 0, 0, 0.5);
+    background-color: #a7ee01;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+#nav-bar ul li a:active {
+    background-color: #82c100;
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+#nav-bar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    background-color: #B3FF00;
+    padding: .2em 1em;
+    border-radius: 50px;
+    box-shadow: -1px 1.5px rgba(0, 0, 0, 0.5);
+    border: .01px solid black
+}
+
+.mission-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/New-York-City-5K-1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mission {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    height: 300px;
+    font-size: 2em;
+    width: 95%;
+    padding: 1em;
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+#portfolio {
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.text-container {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.portfolio-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.5rem;   
+    background-position: top;
+    align-items: center;
+}
+
+.portfolio-img-container p{
+    margin-left: 2.5%;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    max-width: 40%;
+    min-width: 250px;
+}
+.portfolio-img-container img {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 500px ;
+    overflow: scroll;
+    object-fit: cover;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: -1px 2px rgba(0,0,0,0.9);
+}
+
+.team-background-img-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-image: url("../images/Team-background.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+#team{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#team img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: -1px 2px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    z-index: 3;
+}
+
+#team .team-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    top: -5rem;
+}
+
+.team-container p, .team-container h3{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+#team .mission-container{
+    position: relative;
+    top: -5rem;
+    height: 150px;
+}
+
+#team .mission-container p, #team .mission-container h2{
+    margin: 2px;
+}
+
+#team .team-member-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50px;
+    padding: 2rem;
+}
+
+
+
+small{
+    font-size: 1.4rem;
+    float: right;
+    padding: 1rem
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    #header {
+        align-items: center;
+    }
+
+    #nav-bar ul {
+        gap: 0.5rem;
+    }
+
+    .mission-container {
+        font-size: 1.5em;
+    }
+
+    #team .mission-container{
+        background-color: transparent;
+        width: 100%;
+        height: fit-content;
+        padding: 1px;
+        margin-top: 20px;
+        background-color: #b1fd00;
+        color: black
+    }
+
+    .text-container {
+        font-size: 2rem;
+    }
+
+    .portfolio-container {
+        margin-left: 0;
+    }
+
+    .portfolio-img-container p {
+        font-size: 1.2rem;
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #team {
+        height: auto;
+        padding: 1rem;
+    }
+
+    #team img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .team-container p, .team-container h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 553px){
+    #nav-bar{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #a7ee01;
+        padding: 1rem;
+        border-radius: 50px;
+        box-shadow: -1px 1.5px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 342px){
+    #team .mission-container{
+        background-color: transparent;
+        width: 100%;
+        height: fit-content;
+        padding: 0px;
+        font-size: 1rem;
+        margin-top: 20px;
+        background-color: #b1fd00;
+        color: black
+    }
+}
