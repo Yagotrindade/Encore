@@ -9,7 +9,7 @@ html {
     font-size: 12px;
 }
 
-#header {
+header {
     display: flex;
     position: fixed;
     width: 95%;
@@ -37,7 +37,7 @@ html {
     margin-right: 10px;
 }
 
-#nav-bar ul {
+.nav-bar ul {
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
@@ -45,7 +45,7 @@ html {
 
 }
 
-#nav-bar ul li a:hover {
+.nav-bar ul li a:hover {
     position: relative;
     bottom: 2px;
     box-shadow: -1.5px 3px rgba(0, 0, 0, 0.5);
@@ -54,14 +54,14 @@ html {
     transition: background-color 0.1s ease-in-out;
 }
 
-#nav-bar ul li a:active {
+.nav-bar ul li a:active {
     background-color: #82c100;
     position: relative;
     top: 2px;
     box-shadow: none;
 }
 
-#nav-bar ul li a {
+.nav-bar ul li a {
     color: black;
     text-decoration: none;
     font-size: 1.4rem;
@@ -87,7 +87,7 @@ html {
     justify-content: center;
 }
 
-#mission {
+.mission {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -112,7 +112,7 @@ html {
 }
 
 
-#portfolio {
+.portfolio {
     position: relative;
     margin-top: 5rem;
     display: flex;
@@ -175,7 +175,7 @@ html {
     z-index: -1;
 }
 
-#team{
+.team{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -184,7 +184,7 @@ html {
     justify-content: center;
 }
 
-#team img{
+.team img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -193,7 +193,7 @@ html {
     z-index: 3;
 }
 
-#team .team-container{
+.team .team-container{
     display: flex;
     align-items: center;
     text-align: center;
@@ -211,17 +211,17 @@ html {
     margin: 5px 0;
 }
 
-#team .mission-container{
+.team .mission-container{
     position: relative;
     top: -5rem;
     height: 150px;
 }
 
-#team .mission-container p, #team .mission-container h2{
+.team .mission-container p, #team .mission-container h2{
     margin: 2px;
 }
 
-#team .team-member-container{
+.team .team-member-container{
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -242,11 +242,11 @@ small{
 
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 768px) {
-    #header {
+    header {
         align-items: center;
     }
 
-    #nav-bar ul {
+    .nav-bar ul {
         gap: 0.5rem;
     }
 
@@ -254,7 +254,7 @@ small{
         font-size: 1.5em;
     }
 
-    #team .mission-container{
+    .team .mission-container{
         background-color: transparent;
         width: 100%;
         height: fit-content;
@@ -283,12 +283,12 @@ small{
         align-items: center;
     }
 
-    #team {
+    .team {
         height: auto;
         padding: 1rem;
     }
 
-    #team img {
+    .team img {
         width: 150px;
         height: 150px;
     }
@@ -299,7 +299,7 @@ small{
 }
 
 @media only screen and (max-width: 553px){
-    #nav-bar{
+    .nav-bar{
         display: none;
     }
     header{
@@ -315,7 +315,7 @@ small{
 }
 
 @media only screen and (max-width: 342px){
-    #team .mission-container{
+    .team .mission-container{
         background-color: transparent;
         width: 100%;
         height: fit-content;
